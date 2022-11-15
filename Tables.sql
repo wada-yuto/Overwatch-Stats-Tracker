@@ -41,7 +41,6 @@ CREATE TABLE Championship.PlayerGame
         REFERENCES Championship.CHARACTER(CharacterID),
     PlayerID INT NOT NULL FOREIGN KEY
         REFERENCES Championship.Player(PlayerID)
-    UNIQUE(CharacterID, PlayerID)
 );
 CREATE TABLE Championship.Team
 (
