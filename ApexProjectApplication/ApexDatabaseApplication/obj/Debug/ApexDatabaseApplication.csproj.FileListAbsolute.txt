@@ -1,0 +1,14 @@
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.AssemblyReference.cache
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Properties.Resources.resources
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.GenerateResource.cache
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.CoreCompileInputs.cache
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.exe.config
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.exe
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.exe
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.uxMainWindow.resources
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query1.resources
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query2.resources
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query3.resources
+C:\Users\ethan\Desktop\ApexProject\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query4.resources
