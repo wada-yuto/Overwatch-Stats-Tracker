@@ -2,7 +2,7 @@
  * Insert Data
  ******************/
 BULK INSERT Championship.Character
-FROM 'C:\Users\yutow\Desktop\CIS560Project\Characters.csv'
+FROM 'C:\Users\yutow\Desktop\CIS560Project\CSV\Characters.csv'
 WITH
  (
      ROWTERMINATOR='\n',
@@ -10,7 +10,7 @@ WITH
  );
 
 BULK INSERT Championship.Player
-FROM 'C:\Users\yutow\Desktop\CIS560Project\Players.csv'
+FROM 'C:\Users\yutow\Desktop\CIS560Project\CSV\Players.csv'
 WITH
  (
      ROWTERMINATOR='\n',
@@ -18,7 +18,7 @@ WITH
  );
 
 BULK INSERT Championship.Team
-FROM 'C:\Users\yutow\Desktop\CIS560Project\Team.csv'
+FROM 'C:\Users\yutow\Desktop\CIS560Project\CSV\Team.csv'
 WITH
  (
      ROWTERMINATOR='\n',
@@ -27,7 +27,7 @@ WITH
  
 
 BULK INSERT Championship.Tournament
-FROM 'C:\Users\yutow\Desktop\CIS560Project\Tournament.csv'
+FROM 'C:\Users\yutow\Desktop\CIS560Project\CSV\Tournament.csv'
 WITH
  (
      ROWTERMINATOR='\n',
@@ -35,7 +35,7 @@ WITH
  );
 
 BULK INSERT Championship.PlayerGame
-FROM 'C:\Users\yutow\Desktop\CIS560Project\PlayerGame.csv'
+FROM 'C:\Users\yutow\Desktop\CIS560Project\CSV\PlayerGame.csv'
 WITH
  (
      ROWTERMINATOR='\n',
