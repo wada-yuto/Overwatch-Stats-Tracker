@@ -73,7 +73,5 @@ CREATE TABLE Championship.TournamentGame
 CREATE TABLE Championship.Tournament
 (
     TournamentID INT NOT NULL IDENTITY PRIMARY KEY,
-    TeamNumber INT NOT NULL,
-    Winner INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Team(TeamID)
+    TeamNumber INT NOT NULL
 );
