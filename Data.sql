@@ -42,4 +42,12 @@ WITH
      FIELDTERMINATOR=','
  );
 
-SELECT * FROM Championship.[PlayerGame]
+BULK INSERT Championship.TournamentGame
+FROM 'C:\Users\yutow\Desktop\CIS560Project\CSV\TournamentGame.csv'
+WITH
+ (
+     ROWTERMINATOR='\n',
+     FIELDTERMINATOR=','
+ );
+
+SELECT * FROM Championship.[TournamentGame]
