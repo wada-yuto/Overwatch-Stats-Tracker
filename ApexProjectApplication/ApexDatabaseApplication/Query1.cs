@@ -9,10 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace ApexDatabaseApplication
 {
     public partial class Query1 : Form
     {
+        
+        
+
         public Query1()
         {
             InitializeComponent();
@@ -20,43 +25,59 @@ namespace ApexDatabaseApplication
 
         private void Execute_Click(object sender, EventArgs e)
         {
-                //try
-                //{
-                //    SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            const string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=ApexDatabase;Integrated Security=True;";
+            try
+            {
+                SqlConnectionStringBuilder build = new SqlConnectionStringBuilder(connectionString);
 
-                //    builder.DataSource = "<your_server.database.windows.net>";
-                //    builder.UserID = "<your_username>";
-                //    builder.Password = "<your_password>";
-                //    builder.InitialCatalog = "<your_database>";
+                using (SqlConnection connection = new SqlConnection(build.ConnectionString))
+                {
+                    string sql = $"SELECT * FROM Team";
 
-                //    using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
-                //    {
-                //        Console.WriteLine("\nQuery data example:");
-                //        Console.WriteLine("=========================================\n");
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
 
-                //        connection.Open();
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                                DataTable dt = new DataTable();
+                                dt.Load(reader);
+                                uxDataView.DataSource = dt;
+                        }
+                    }
+                }
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            //string ConnectionString = @"Data Source = (localdb) / MSSQLLocalDB; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            //using (SqlConnection MyConnection = new SqlConnection(ConnectionString))
+            //{
+            //    MyConnection.Open();
+            //    // some code here 
+            //}
+            //SqlConnection con = new SqlConnection("Server= localhost, Authentication=Windows Authentication, Database= ApexDatabase");
+            //con.Open();
+            //SqlConnection con = new SqlConnection();
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand("SELECT * FROM ApexDatabase.Team", MyConnection);
 
-                //        String sql = "SELECT name, collation_name FROM sys.databases";
 
-                //        using (SqlCommand command = new SqlCommand(sql, connection))
-                //        {
-                //            using (SqlDataReader reader = command.ExecuteReader())
-                //            {
-                //                while (reader.Read())
-                //                {
-                //                    Console.WriteLine("{0} {1}", reader.GetString(0), reader.GetString(1));
-                //                }
-                //            }
-                //        }
-                //    }
-                //}
-                //catch (SqlException ex)
-                //{
-                //    Console.WriteLine(ex.ToString());
-                //}
-                //Console.WriteLine("\nDone. Press enter.");
-                //Console.ReadLine();
-            
+            //var reader = cmd.ExecuteReader();
+            //if (reader == null)
+            //{
+
+            //    MessageBox.Show("Error");
+            //}
+            //else
+            //{
+            MessageBox.Show("Query successful");
+            //DataTable dt = new DataTable();
+            //dt.Load(reader);
+            //uxDataView.DataSource = dt;
+            //    con.Close();
+            //}
         }
 
         private void label2_Click(object sender, EventArgs e)
