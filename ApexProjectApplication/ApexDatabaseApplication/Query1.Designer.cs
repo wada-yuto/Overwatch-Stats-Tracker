@@ -32,7 +32,7 @@ namespace ApexDatabaseApplication
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.Execute = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.uxTIDInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.uxDataView = new System.Windows.Forms.DataGridView();
@@ -45,7 +45,7 @@ namespace ApexDatabaseApplication
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.Execute);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.uxTIDInput);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(34, 63);
             this.panel3.Name = "panel3";
@@ -59,10 +59,10 @@ namespace ApexDatabaseApplication
             this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label4.Location = new System.Drawing.Point(5, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(436, 75);
+            this.label4.Size = new System.Drawing.Size(427, 50);
             this.label4.TabIndex = 8;
-            this.label4.Text = "This function takes in a tournament game ID, \r\nand returns the ID of the team tha" +
-    "t won that entire\r\ntournament";
+            this.label4.Text = "This function takes in a character ID, \r\nand returns the win percentage for that " +
+    "character\r\n";
             // 
             // Execute
             // 
@@ -79,14 +79,14 @@ namespace ApexDatabaseApplication
             this.Execute.UseVisualStyleBackColor = false;
             this.Execute.Click += new System.EventHandler(this.Execute_Click);
             // 
-            // textBox1
+            // uxTIDInput
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(10, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(499, 20);
-            this.textBox1.TabIndex = 4;
+            this.uxTIDInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.uxTIDInput.ForeColor = System.Drawing.Color.White;
+            this.uxTIDInput.Location = new System.Drawing.Point(10, 102);
+            this.uxTIDInput.Name = "uxTIDInput";
+            this.uxTIDInput.Size = new System.Drawing.Size(499, 20);
+            this.uxTIDInput.TabIndex = 4;
             // 
             // label2
             // 
@@ -95,9 +95,9 @@ namespace ApexDatabaseApplication
             this.label2.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label2.Location = new System.Drawing.Point(3, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(547, 80);
+            this.label2.Size = new System.Drawing.Size(473, 80);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Enter Tournament ID that you want to \r\nfind the winner to";
+            this.label2.Text = "Enter Character you want to find \r\nwin percentage for:\r\n";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -107,9 +107,9 @@ namespace ApexDatabaseApplication
             this.label1.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label1.Location = new System.Drawing.Point(27, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 40);
+            this.label1.Size = new System.Drawing.Size(473, 40);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Tournament game winner tracker";
+            this.label1.Text = "Character win percentage tracker";
             // 
             // uxDataView
             // 
@@ -143,7 +143,7 @@ namespace ApexDatabaseApplication
 
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Execute;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox uxTIDInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;

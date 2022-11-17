@@ -25,6 +25,8 @@ namespace ApexDatabaseApplication
 
         private void Execute_Click(object sender, EventArgs e)
         {
+            var tourneyID = uxTIDInput.Text;
+
             const string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=ApexDatabase;Integrated Security=True;";
             try
             {
@@ -32,17 +34,20 @@ namespace ApexDatabaseApplication
 
                 using (SqlConnection connection = new SqlConnection(build.ConnectionString))
                 {
-                    string sql = $"SELECT * FROM Team";
+                    string sql = $"CharacterWinPercentage";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-
+                        command.Parameters.Add("@", SqlDbType.NVarChar).Value = uxTIDInput.Text;
                         connection.Open();
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                                DataTable dt = new DataTable();
-                                dt.Load(reader);
-                                uxDataView.DataSource = dt;
+
+                            DataTable dt = new DataTable();
+                            dt.Load(reader);
+                            uxDataView.DataSource = dt;
+                            MessageBox.Show("Query successful");
+                                connection.Close();
                         }
                     }
                 }
@@ -71,8 +76,7 @@ namespace ApexDatabaseApplication
             //    MessageBox.Show("Error");
             //}
             //else
-            //{
-            MessageBox.Show("Query successful");
+            //
             //DataTable dt = new DataTable();
             //dt.Load(reader);
             //uxDataView.DataSource = dt;
