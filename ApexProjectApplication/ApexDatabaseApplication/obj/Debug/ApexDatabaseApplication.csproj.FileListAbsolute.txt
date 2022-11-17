@@ -26,3 +26,17 @@ C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplicat
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.CoreCompileInputs.cache
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.exe
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.exe.config
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.exe
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.AssemblyReference.cache
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.uxMainWindow.resources
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Properties.Resources.resources
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query1.resources
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query2.resources
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query3.resources
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query4.resources
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.GenerateResource.cache
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.CoreCompileInputs.cache
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.exe
+C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.pdb

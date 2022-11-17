@@ -99,7 +99,7 @@ namespace ApexDatabaseApplication
             this.uxQ2.Name = "uxQ2";
             this.uxQ2.Size = new System.Drawing.Size(200, 70);
             this.uxQ2.TabIndex = 1;
-            this.uxQ2.Text = "Query 2";
+            this.uxQ2.Text = "Character Tracker";
             this.uxQ2.UseVisualStyleBackColor = true;
             this.uxQ2.Click += new System.EventHandler(this.uxQ2_Click);
             // 
@@ -114,7 +114,7 @@ namespace ApexDatabaseApplication
             this.uxQ1.Name = "uxQ1";
             this.uxQ1.Size = new System.Drawing.Size(200, 70);
             this.uxQ1.TabIndex = 1;
-            this.uxQ1.Text = "Query 1";
+            this.uxQ1.Text = "Find tournament winner";
             this.uxQ1.UseVisualStyleBackColor = true;
             this.uxQ1.Click += new System.EventHandler(this.uxQ1_Click);
             // 
