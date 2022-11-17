@@ -85,6 +85,7 @@ namespace ApexDatabaseApplication
             this.Execute.TabIndex = 2;
             this.Execute.Text = "Execute Query";
             this.Execute.UseVisualStyleBackColor = false;
+            this.Execute.Click += new System.EventHandler(this.Execute_Click);
             // 
             // textBox1
             // 
@@ -117,7 +118,7 @@ namespace ApexDatabaseApplication
             this.label1.TabIndex = 3;
             this.label1.Text = "Query 1";
             // 
-            // Query2
+            // Query1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +126,7 @@ namespace ApexDatabaseApplication
             this.ClientSize = new System.Drawing.Size(714, 502);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
-            this.Name = "Query2";
+            this.Name = "Query1";
             this.Text = "Query2";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
