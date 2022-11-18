@@ -64,7 +64,7 @@ namespace ApexDatabaseApplication
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 629);
+            this.panel1.Size = new System.Drawing.Size(209, 629);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -75,9 +75,9 @@ namespace ApexDatabaseApplication
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button5.Location = new System.Drawing.Point(0, 570);
+            this.button5.Location = new System.Drawing.Point(0, 534);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 55);
+            this.button5.Size = new System.Drawing.Size(209, 55);
             this.button5.TabIndex = 6;
             this.button5.Text = "Update Winner of\r\nTournament Game";
             this.button5.UseVisualStyleBackColor = true;
@@ -90,9 +90,9 @@ namespace ApexDatabaseApplication
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button4.Location = new System.Drawing.Point(0, 515);
+            this.button4.Location = new System.Drawing.Point(0, 479);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 55);
+            this.button4.Size = new System.Drawing.Size(209, 55);
             this.button4.TabIndex = 5;
             this.button4.Text = "Add new\r\nTeam";
             this.button4.UseVisualStyleBackColor = true;
@@ -105,9 +105,9 @@ namespace ApexDatabaseApplication
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button3.Location = new System.Drawing.Point(0, 460);
+            this.button3.Location = new System.Drawing.Point(0, 424);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 55);
+            this.button3.Size = new System.Drawing.Size(209, 55);
             this.button3.TabIndex = 4;
             this.button3.Text = "Add New\r\nPlayer";
             this.button3.UseVisualStyleBackColor = true;
@@ -120,9 +120,9 @@ namespace ApexDatabaseApplication
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button2.Location = new System.Drawing.Point(0, 405);
+            this.button2.Location = new System.Drawing.Point(0, 369);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 55);
+            this.button2.Size = new System.Drawing.Size(209, 55);
             this.button2.TabIndex = 3;
             this.button2.Text = "Update Player\r\nEmail";
             this.button2.UseVisualStyleBackColor = true;
@@ -135,9 +135,9 @@ namespace ApexDatabaseApplication
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(0, 350);
+            this.button1.Location = new System.Drawing.Point(0, 314);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 55);
+            this.button1.Size = new System.Drawing.Size(209, 55);
             this.button1.TabIndex = 2;
             this.button1.Text = "Get Tournament\r\nWinner";
             this.button1.UseVisualStyleBackColor = true;
@@ -150,9 +150,9 @@ namespace ApexDatabaseApplication
             this.uxQ4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxQ4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxQ4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.uxQ4.Location = new System.Drawing.Point(0, 295);
+            this.uxQ4.Location = new System.Drawing.Point(0, 259);
             this.uxQ4.Name = "uxQ4";
-            this.uxQ4.Size = new System.Drawing.Size(200, 55);
+            this.uxQ4.Size = new System.Drawing.Size(209, 55);
             this.uxQ4.TabIndex = 1;
             this.uxQ4.Text = "Rank Player\r\n by kills";
             this.uxQ4.UseVisualStyleBackColor = true;
@@ -165,9 +165,9 @@ namespace ApexDatabaseApplication
             this.uxQ3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxQ3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxQ3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.uxQ3.Location = new System.Drawing.Point(0, 240);
+            this.uxQ3.Location = new System.Drawing.Point(0, 204);
             this.uxQ3.Name = "uxQ3";
-            this.uxQ3.Size = new System.Drawing.Size(200, 55);
+            this.uxQ3.Size = new System.Drawing.Size(209, 55);
             this.uxQ3.TabIndex = 1;
             this.uxQ3.Text = "Rank Team W/ \r\nHighest win %";
             this.uxQ3.UseVisualStyleBackColor = true;
@@ -180,9 +180,9 @@ namespace ApexDatabaseApplication
             this.uxQ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxQ2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxQ2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.uxQ2.Location = new System.Drawing.Point(0, 185);
+            this.uxQ2.Location = new System.Drawing.Point(0, 149);
             this.uxQ2.Name = "uxQ2";
-            this.uxQ2.Size = new System.Drawing.Size(200, 55);
+            this.uxQ2.Size = new System.Drawing.Size(209, 55);
             this.uxQ2.TabIndex = 1;
             this.uxQ2.Text = "Rank Team\r\nAverage Kills";
             this.uxQ2.UseVisualStyleBackColor = true;
@@ -195,9 +195,9 @@ namespace ApexDatabaseApplication
             this.uxQ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxQ1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxQ1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.uxQ1.Location = new System.Drawing.Point(0, 130);
+            this.uxQ1.Location = new System.Drawing.Point(0, 94);
             this.uxQ1.Name = "uxQ1";
-            this.uxQ1.Size = new System.Drawing.Size(200, 55);
+            this.uxQ1.Size = new System.Drawing.Size(209, 55);
             this.uxQ1.TabIndex = 1;
             this.uxQ1.Text = "Win Percentage Tracker";
             this.uxQ1.UseVisualStyleBackColor = true;
@@ -205,20 +205,22 @@ namespace ApexDatabaseApplication
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 130);
+            this.panel2.Size = new System.Drawing.Size(209, 94);
             this.panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-58, -17);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(312, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(209, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -226,9 +228,9 @@ namespace ApexDatabaseApplication
             // uxLoader
             // 
             this.uxLoader.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.uxLoader.Location = new System.Drawing.Point(200, 0);
+            this.uxLoader.Location = new System.Drawing.Point(209, 0);
             this.uxLoader.Name = "uxLoader";
-            this.uxLoader.Size = new System.Drawing.Size(751, 629);
+            this.uxLoader.Size = new System.Drawing.Size(742, 629);
             this.uxLoader.TabIndex = 1;
             // 
             // uxMainWindow
