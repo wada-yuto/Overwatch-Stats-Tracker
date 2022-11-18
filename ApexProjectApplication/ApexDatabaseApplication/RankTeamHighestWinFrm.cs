@@ -33,7 +33,7 @@ namespace ApexDatabaseApplication
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         //Need to change this part to supply parameters
-                        command.Parameters.Add(new SqlParameter("@Nap", uxCharacerComboBox.Text));
+                        command.Parameters.Add(new SqlParameter("@MapName", uxCharacerComboBox.Text));
 
                         connection.Open();
                         using (SqlDataReader reader = command.ExecuteReader())

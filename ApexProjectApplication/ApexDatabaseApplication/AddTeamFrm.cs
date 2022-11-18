@@ -33,14 +33,14 @@ namespace ApexDatabaseApplication
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         //Need to change this part to supply parameters
-                        command.Parameters.Add(new SqlParameter("@Coach", uxCoach.Text));
+                        command.Parameters.Add(new SqlParameter("@Coach", uxCoachTextBox.Text));
                         command.Parameters.Add(new SqlParameter("@Record", uxRecord.Text));
                         command.Parameters.Add(new SqlParameter("@TeamName", uxTeamName.Text));
-                        command.Parameters.Add(new SqlParameter("@Player1", uxPlayerComboBox.Text));
-                        command.Parameters.Add(new SqlParameter("@Player2", comboBox1.Text));
-                        command.Parameters.Add(new SqlParameter("@Player3", comboBox3.Text));
-                        command.Parameters.Add(new SqlParameter("@Player4", comboBox4.Text));
-                        command.Parameters.Add(new SqlParameter("@Player5", comboBox5.Text));
+                        command.Parameters.Add(new SqlParameter("@Player1", uxTextBoxPlayer1.Text));
+                        command.Parameters.Add(new SqlParameter("@Player2", uxTextBoxPlayer2.Text));
+                        command.Parameters.Add(new SqlParameter("@Player3", uxTextBoxPlayer3.Text));
+                        command.Parameters.Add(new SqlParameter("@Player4", uxTextBoxPlayer4.Text));
+                        command.Parameters.Add(new SqlParameter("@Player5", uxTextBoxPlayer5.Text));
 
 
 

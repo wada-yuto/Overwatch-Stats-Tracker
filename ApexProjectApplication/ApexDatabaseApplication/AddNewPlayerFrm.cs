@@ -45,6 +45,11 @@ namespace ApexDatabaseApplication
 
                             MessageBox.Show("Player Added");
                             connection.Close();
+                            uxEnteredName.Clear();
+                            uxKills.Value = 0;
+                            uxMain.SelectedIndex = -1;
+                            uxCharacerComboBox.SelectedIndex = -1;
+                            uxEnteredEmail.Clear();
                         }
                     }
                 }

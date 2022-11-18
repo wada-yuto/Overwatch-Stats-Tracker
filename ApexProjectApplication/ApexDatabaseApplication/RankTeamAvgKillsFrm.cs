@@ -51,5 +51,10 @@ namespace ApexDatabaseApplication
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

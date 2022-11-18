@@ -79,9 +79,9 @@ namespace ApexDatabaseApplication
             this.uxTournamentComboBox.ForeColor = System.Drawing.SystemColors.Info;
             this.uxTournamentComboBox.FormattingEnabled = true;
             this.uxTournamentComboBox.Items.AddRange(new object[] {
-            "254",
-            "255",
-            "256"});
+            "Tournament 1",
+            "Tournament 2",
+            "Tournament 3"});
             this.uxTournamentComboBox.Location = new System.Drawing.Point(0, 75);
             this.uxTournamentComboBox.Name = "uxTournamentComboBox";
             this.uxTournamentComboBox.Size = new System.Drawing.Size(422, 38);

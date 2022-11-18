@@ -32,11 +32,14 @@ namespace ApexDatabaseApplication
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
+                        string[] tournamentID = uxTournamentComboBox.Text.Split(' ');
+                        Console.WriteLine(uxT1CB.SelectedIndex + 1);
+                        Console.WriteLine(uxT2CB.SelectedIndex + 1);
                         //Need to change this part to supply parameters
-                        command.Parameters.Add(new SqlParameter("@TournamentID", uxTournamentComboBox.Text));
-                        command.Parameters.Add(new SqlParameter("@Team1", uxT1CB.Text));
-                        command.Parameters.Add(new SqlParameter("@Team2", uxT2CB.Text));
-                        command.Parameters.Add(new SqlParameter("@Winner", uxWinner.Text));
+                        command.Parameters.Add(new SqlParameter("@TournamentID", tournamentID[1]));
+                        command.Parameters.Add(new SqlParameter("@Team1ID", uxT1CB.SelectedIndex + 1));
+                        command.Parameters.Add(new SqlParameter("@Team2ID", uxT2CB.SelectedIndex + 1));
+                        command.Parameters.Add(new SqlParameter("@Winner", uxWinner.SelectedIndex + 1));
 
                         connection.Open();
                         using (SqlDataReader reader = command.ExecuteReader())

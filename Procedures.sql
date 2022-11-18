@@ -7,12 +7,12 @@ CREATE PROCEDURE FindTournamentWinner
     @TournamentID INT
 AS
 
-SELECT TOP 1
-    COUNT(*) AS TournamentWinner, Winner
-FROM TournamentGame
-WHERE TournamentID = @TournamentID
-GROUP BY Winner
-ORDER BY COUNT(*) DESC
+    SELECT TOP 1
+        COUNT(*) AS TournamentWinner, Winner
+    FROM TournamentGame
+    WHERE TournamentID = @TournamentID
+    GROUP BY Winner
+    ORDER BY COUNT(*) DESC
 
 EXECUTE FindTournamentWinner @TournamentID = 1;
 GO;
@@ -50,26 +50,26 @@ GO;
 CREATE PROCEDURE TeamAvereageKillPerGame
 AS
 
-WITH
-    PlayerCTE(TotalKills, PlayerID, TotalGames, PlayerName)
-    AS
-    (
-        SELECT SUM(Kills) AS TotalKills, P.PlayerID, COUNT(PlayerGameID) AS TotalGames,
-            P.PlayerName
-        FROM PlayerGame PG
-            INNER JOIN Player P ON P.PlayerID = PG.PlayerID
-        GROUP BY P.PlayerID, P.PlayerName
-        --Return average kills Return number of games (total)
-    )
-SELECT T.TeamName, T.Coach, FORMAT(CAST(SUM(CT.TotalKills) AS FLOAT)/CAST(SUM(CT.TotalGames) AS FLOAT), 'N2') AS [KillAverage],
-    CAST((substring(T.Record, 1, CHARINDEX('-', T.Record) -1)) AS FLOAT) AS Wins,
-    CAST((substring(T.Record, CHARINDEX('-', T.Record) + 1 ,3)) AS FLOAT) AS Loss
-FROM PlayerCTE CT
-    INNER JOIN Team T ON T.Player1 = CT.PlayerID
-        OR T.Player2 = CT.PlayerID OR T.Player3 = CT.PlayerID
-        OR T.Player4 = CT.PlayerID OR T.Player5 = CT.PlayerID
-GROUP BY T.TeamName, T.Coach, T.Record
-ORDER BY KillAverage DESC
+    WITH
+        PlayerCTE(TotalKills, PlayerID, TotalGames, PlayerName)
+        AS
+        (
+            SELECT SUM(Kills) AS TotalKills, P.PlayerID, COUNT(PlayerGameID) AS TotalGames,
+                P.PlayerName
+            FROM PlayerGame PG
+                INNER JOIN Player P ON P.PlayerID = PG.PlayerID
+            GROUP BY P.PlayerID, P.PlayerName
+            --Return average kills Return number of games (total)
+        )
+    SELECT T.TeamName, T.Coach, FORMAT(CAST(SUM(CT.TotalKills) AS FLOAT)/CAST(SUM(CT.TotalGames) AS FLOAT), 'N2') AS [KillAverage],
+        CAST((substring(T.Record, 1, CHARINDEX('-', T.Record) -1)) AS FLOAT) AS Wins,
+        CAST((substring(T.Record, CHARINDEX('-', T.Record) + 1 ,3)) AS FLOAT) AS Loss
+    FROM PlayerCTE CT
+        INNER JOIN Team T ON T.Player1 = CT.PlayerID
+            OR T.Player2 = CT.PlayerID OR T.Player3 = CT.PlayerID
+            OR T.Player4 = CT.PlayerID OR T.Player5 = CT.PlayerID
+    GROUP BY T.TeamName, T.Coach, T.Record
+    ORDER BY KillAverage DESC
 
 
 EXECUTE TeamAvereageKillPerGame;
@@ -80,10 +80,10 @@ GO;
 
 CREATE PROCEDURE RankMapWinPercentage @MapName NVARCHAR(32)
 AS
-
+    
     SELECT T.TeamName,
         FORMAT(CAST((COALESCE(FirstTeam.FirstWins, 0) + COALESCE(SecondTeam.SecondWins, 0)) AS FLOAT)/
-        CAST((COALESCE(FirstTeam.FirstGames, 0) + COALESCE(SecondTeam.SecondGames, 0)) AS FLOAT), 'P2') AS WinPercentage
+        CAST((COALESCE(FirstTeam.FirstGames, 0) + COALESCE(SecondTeam.SecondGames, 0)) AS FLOAT), 'P2') AS [WinPercentage]
     FROM
         (
             SELECT Team1, COUNT(*) AS FirstGames, SUM(CASE WHEN Team1 = Winner THEN 1 ELSE 0 END) AS FirstWins
@@ -101,6 +101,7 @@ AS
         SecondTeam ON FirstTeam.Team1 = SecondTeam.Team2
         INNER JOIN Team T ON FirstTeam.Team1 = T.TeamID OR 
         SecondTeam.Team2 = T.TeamID
+    ORDER BY WinPercentage DESC 
     GO;
 
 EXECUTE RankMapWinPercentage @MapName = 'Nepal';
@@ -111,14 +112,13 @@ GO;
 CREATE PROCEDURE RankKillsPerGameTournament
     @TournamentID INT
 AS
-
-SELECT RANK() OVER(ORDER BY FORMAT((SUM(PG.Kills)/COUNT(PG.PlayerGameID)), 'N2') DESC) AS RANK,
-    P.PlayerName, P.Main,
-    FORMAT((SUM(PG.Kills)/COUNT(PG.PlayerGameID)), 'N2') AS KillsPerGame
-FROM PlayerGame PG
-    INNER JOIN Player P ON P.PlayerID = PG.PlayerID
-WHERE PG.PlayerGameID BETWEEN ((@TournamentID - 1) * 7000) + 1 AND (@TournamentID * 7000)
-GROUP BY P.PlayerID, P.PlayerName, P.Main
+    SELECT RANK() OVER(ORDER BY FORMAT((SUM(PG.Kills)/COUNT(PG.PlayerGameID)), 'N2') DESC) AS RANK,
+        P.PlayerName, P.Main,
+        FORMAT((SUM(PG.Kills)/COUNT(PG.PlayerGameID)), 'N2') AS KillsPerGame
+    FROM PlayerGame PG
+        INNER JOIN Player P ON P.PlayerID = PG.PlayerID
+    WHERE PG.PlayerGameID BETWEEN ((@TournamentID - 1) * 7000) + 1 AND (@TournamentID * 7000)
+    GROUP BY P.PlayerID, P.PlayerName, P.Main
 
 
 EXECUTE RankKillsPerGameTournament @TournamentID; 
@@ -159,7 +159,6 @@ EXECUTE AddNewPlayer @PlayerName = 'patch', @TotalKills = '1475', @Main = 'Echo'
 EXECUTE AddNewPlayer @PlayerName = 'tanky', @TotalKills = '1589', @Main = 'Zarya', @Role = 'Tank', @Email = 'tanky@gmail.com';
 GO;
 
-
 --Add new Teams
 
 CREATE PROCEDURE AddNewTeam
@@ -185,10 +184,10 @@ GO;
 --Update the winner on TournamentGame
 CREATE PROCEDURE EditWinnerTournamentGame
     @TournamentID INT,
-    @Team1Name NVARCHAR(32),
-    @Team2Name NVARCHAR(32),
+    @Team1ID INT,
+    @Team2ID INT,
     @Winner NVARCHAR(32)
 AS
-UPDATE TournamentGame
+    UPDATE TournamentGame
     SET Winner = @Winner
-    WHERE ((Team1 = @Team1Name AND Team2 = @Team2Name) OR (Team1 = @Team2Name AND Team2 = @Team1Name)) AND TournamentID = @TournamentID
+    WHERE ((Team1 = @Team1ID AND Team2 = @Team2ID) OR (Team1 = @Team2ID AND Team2 = @Team1ID)) AND TournamentID = @TournamentID

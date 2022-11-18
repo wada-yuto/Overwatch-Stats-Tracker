@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.uxT1CB = new System.Windows.Forms.ComboBox();
+            this.uxT2CB = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.uxWinner = new System.Windows.Forms.ComboBox();
             this.uxTournamentComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Execute = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.uxT2CB = new System.Windows.Forms.ComboBox();
-            this.uxT1CB = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,94 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(683, 432);
             this.panel3.TabIndex = 9;
+            // 
+            // uxT1CB
+            // 
+            this.uxT1CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.uxT1CB.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxT1CB.ForeColor = System.Drawing.SystemColors.Info;
+            this.uxT1CB.FormattingEnabled = true;
+            this.uxT1CB.Items.AddRange(new object[] {
+            "Atlanta Reign",
+            "Boston Uprising",
+            "Chengdu Hunters",
+            "Dallas Fuel",
+            "Florida Mayhem",
+            "Guangzhou Charge",
+            "Hangzhou Spark",
+            "Houston Outlaws",
+            "London Spitfire",
+            "Los Angeles Gladitors",
+            "Los Angeles Valiant",
+            "New York Excelsior",
+            "Paris Eternal",
+            "Philadelphia Fusion",
+            "San Francisco Shock",
+            "Seoul Dynasty",
+            "Shanghai Dragons",
+            "Toronto Defiant",
+            "Vancouver Titans",
+            "Washington Justice"});
+            this.uxT1CB.Location = new System.Drawing.Point(120, 149);
+            this.uxT1CB.Name = "uxT1CB";
+            this.uxT1CB.Size = new System.Drawing.Size(422, 38);
+            this.uxT1CB.TabIndex = 16;
+            this.uxT1CB.Text = "Teams";
+            // 
+            // uxT2CB
+            // 
+            this.uxT2CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.uxT2CB.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxT2CB.ForeColor = System.Drawing.SystemColors.Info;
+            this.uxT2CB.FormattingEnabled = true;
+            this.uxT2CB.Items.AddRange(new object[] {
+            "Atlanta Reign ",
+            "Boston Uprising",
+            "Chengdu Hunters",
+            "Dallas Fuel",
+            "Florida Mayhem",
+            "Guangzhou Charge",
+            "Hangzhou Spark",
+            "Houston Outlaws",
+            "London Spitfire",
+            "Los Angeles Gladitors",
+            "Los Angeles Valiant",
+            "New York Excelsior",
+            "Paris Eternal",
+            "Philadelphia Fusion",
+            "San Francisco Shock",
+            "Seoul Dynasty",
+            "Shanghai Dragons",
+            "Toronto Defiant",
+            "Vancouver Titans",
+            "Washington Justice"});
+            this.uxT2CB.Location = new System.Drawing.Point(120, 208);
+            this.uxT2CB.Name = "uxT2CB";
+            this.uxT2CB.Size = new System.Drawing.Size(422, 38);
+            this.uxT2CB.TabIndex = 15;
+            this.uxT2CB.Text = "Teams";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label5.Location = new System.Drawing.Point(3, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 32);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Team 2:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label4.Location = new System.Drawing.Point(3, 149);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 32);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Team 1:";
             // 
             // uxWinner
             // 
@@ -99,9 +187,9 @@
             this.uxTournamentComboBox.ForeColor = System.Drawing.SystemColors.Info;
             this.uxTournamentComboBox.FormattingEnabled = true;
             this.uxTournamentComboBox.Items.AddRange(new object[] {
-            "254",
-            "255",
-            "256"});
+            "Tournament 1",
+            "Tournament 2",
+            "Tournament 3"});
             this.uxTournamentComboBox.Location = new System.Drawing.Point(10, 91);
             this.uxTournamentComboBox.Name = "uxTournamentComboBox";
             this.uxTournamentComboBox.Size = new System.Drawing.Size(422, 38);
@@ -115,7 +203,7 @@
             this.label3.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label3.Location = new System.Drawing.Point(4, 276);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 32);
+            this.label3.Size = new System.Drawing.Size(254, 32);
             this.label3.TabIndex = 10;
             this.label3.Text = "Select Winning Team";
             // 
@@ -155,94 +243,6 @@
             this.label1.Size = new System.Drawing.Size(402, 40);
             this.label1.TabIndex = 8;
             this.label1.Text = "Update Tournament Winner";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label4.Location = new System.Drawing.Point(3, 149);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 32);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Team 1:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label5.Location = new System.Drawing.Point(3, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 32);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Team 2:";
-            // 
-            // uxT2CB
-            // 
-            this.uxT2CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.uxT2CB.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxT2CB.ForeColor = System.Drawing.SystemColors.Info;
-            this.uxT2CB.FormattingEnabled = true;
-            this.uxT2CB.Items.AddRange(new object[] {
-            "Atlanta Reign ",
-            "Boston Uprising",
-            "Chengdu Hunters",
-            "Dallas Fuel",
-            "Florida Mayhem",
-            "Guangzhou Charge",
-            "Hangzhou Spark",
-            "Houston Outlaws",
-            "London Spitfire",
-            "Los Angeles Gladitors",
-            "Los Angeles Valiant",
-            "New York Excelsior",
-            "Paris Eternal",
-            "Philadelphia Fusion",
-            "San Francisco Shock",
-            "Seoul Dynasty",
-            "Shanghai Dragons",
-            "Toronto Defiant",
-            "Vancouver Titans",
-            "Washington Justice"});
-            this.uxT2CB.Location = new System.Drawing.Point(120, 208);
-            this.uxT2CB.Name = "uxT2CB";
-            this.uxT2CB.Size = new System.Drawing.Size(422, 38);
-            this.uxT2CB.TabIndex = 15;
-            this.uxT2CB.Text = "Teams";
-            // 
-            // uxT1CB
-            // 
-            this.uxT1CB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.uxT1CB.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxT1CB.ForeColor = System.Drawing.SystemColors.Info;
-            this.uxT1CB.FormattingEnabled = true;
-            this.uxT1CB.Items.AddRange(new object[] {
-            "Atlanta Reign ",
-            "Boston Uprising",
-            "Chengdu Hunters",
-            "Dallas Fuel",
-            "Florida Mayhem",
-            "Guangzhou Charge",
-            "Hangzhou Spark",
-            "Houston Outlaws",
-            "London Spitfire",
-            "Los Angeles Gladitors",
-            "Los Angeles Valiant",
-            "New York Excelsior",
-            "Paris Eternal",
-            "Philadelphia Fusion",
-            "San Francisco Shock",
-            "Seoul Dynasty",
-            "Shanghai Dragons",
-            "Toronto Defiant",
-            "Vancouver Titans",
-            "Washington Justice"});
-            this.uxT1CB.Location = new System.Drawing.Point(120, 149);
-            this.uxT1CB.Name = "uxT1CB";
-            this.uxT1CB.Size = new System.Drawing.Size(422, 38);
-            this.uxT1CB.TabIndex = 16;
-            this.uxT1CB.Text = "Teams";
             // 
             // UpdateTournamentWinner
             // 

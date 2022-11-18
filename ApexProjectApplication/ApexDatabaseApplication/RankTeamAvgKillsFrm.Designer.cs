@@ -31,7 +31,6 @@ namespace ApexDatabaseApplication
         {
             this.uxDataView = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.Execute = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uxDataView)).BeginInit();
@@ -50,24 +49,12 @@ namespace ApexDatabaseApplication
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.Execute);
             this.panel3.Location = new System.Drawing.Point(18, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(671, 172);
             this.panel3.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label4.Location = new System.Drawing.Point(3, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(427, 50);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "This function takes in a character name, \r\nand returns the win percentage for tha" +
-    "t character\r\n";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // Execute
             // 
@@ -76,7 +63,7 @@ namespace ApexDatabaseApplication
             this.Execute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Execute.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Execute.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Execute.Location = new System.Drawing.Point(8, 86);
+            this.Execute.Location = new System.Drawing.Point(207, 48);
             this.Execute.Name = "Execute";
             this.Execute.Size = new System.Drawing.Size(206, 77);
             this.Execute.TabIndex = 2;
@@ -108,7 +95,6 @@ namespace ApexDatabaseApplication
             this.Text = "Query2";
             ((System.ComponentModel.ISupportInitialize)(this.uxDataView)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +106,5 @@ namespace ApexDatabaseApplication
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Execute;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
     }
 }

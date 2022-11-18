@@ -130,40 +130,9 @@
             this.uxCharacerComboBox.ForeColor = System.Drawing.SystemColors.Info;
             this.uxCharacerComboBox.FormattingEnabled = true;
             this.uxCharacerComboBox.Items.AddRange(new object[] {
-            "Ana",
-            "Ashe",
-            "Baptiste",
-            "Bastion",
-            "Brgitte",
-            "Cassidy",
-            "Doomfist",
-            "D.va",
-            "Echo",
-            "Genji",
-            "Hanzo",
-            "Junker Queen",
-            "Junkrat",
-            "Kiriko",
-            "Lucio",
-            "Mei",
-            "Mercy",
-            "Moira",
-            "Orisa",
-            "Pharah",
-            "Reaper",
-            "Reinhardt",
-            "Roadhog",
-            "Sigma",
-            "Soldier:76",
-            "Sombra",
-            "Symmetra",
-            "Torbijorn",
-            "Tracer",
-            "Widowmaker",
-            "WInston",
-            "Wrecking Ball",
-            "Zarya",
-            "Zenyatta"});
+            "Tank",
+            "DPS",
+            "Support"});
             this.uxCharacerComboBox.Location = new System.Drawing.Point(142, 230);
             this.uxCharacerComboBox.Name = "uxCharacerComboBox";
             this.uxCharacerComboBox.Size = new System.Drawing.Size(305, 38);
@@ -197,7 +166,7 @@
             this.label7.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label7.Location = new System.Drawing.Point(52, 270);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 32);
+            this.label7.Size = new System.Drawing.Size(91, 32);
             this.label7.TabIndex = 8;
             this.label7.Text = "Email: ";
             // 
@@ -208,7 +177,7 @@
             this.label6.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label6.Location = new System.Drawing.Point(4, 142);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 32);
+            this.label6.Size = new System.Drawing.Size(133, 32);
             this.label6.TabIndex = 7;
             this.label6.Text = "Total Kills:";
             // 
@@ -219,7 +188,7 @@
             this.label5.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label5.Location = new System.Drawing.Point(56, 188);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 32);
+            this.label5.Size = new System.Drawing.Size(87, 32);
             this.label5.TabIndex = 6;
             this.label5.Text = "Main: ";
             // 
@@ -230,7 +199,7 @@
             this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label4.Location = new System.Drawing.Point(64, 229);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 32);
+            this.label4.Size = new System.Drawing.Size(79, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Role: ";
             // 
@@ -241,7 +210,7 @@
             this.label3.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label3.Location = new System.Drawing.Point(48, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 32);
+            this.label3.Size = new System.Drawing.Size(89, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "Name:";
             // 

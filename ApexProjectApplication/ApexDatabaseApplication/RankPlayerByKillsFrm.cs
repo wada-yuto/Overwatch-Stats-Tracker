@@ -27,13 +27,14 @@ namespace ApexDatabaseApplication
 
                 using (SqlConnection connection = new SqlConnection(build.ConnectionString))
                 {
-                    string sql = $"CharacterWinPercentage";
+                    string sql = $"RankKillsPerGameTournament";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
+                        string[] tournamentID = uxTournamentComboBox.Text.Split(' ');
                         //Need to change this part to supply parameters
-                        command.Parameters.Add(new SqlParameter("@CharacterName", uxTournamentComboBox.Text));
+                        command.Parameters.Add(new SqlParameter("@TournamentID", tournamentID[1]));
 
                         connection.Open();
                         using (SqlDataReader reader = command.ExecuteReader())
