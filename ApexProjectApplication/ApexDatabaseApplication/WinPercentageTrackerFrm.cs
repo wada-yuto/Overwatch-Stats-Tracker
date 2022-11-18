@@ -25,7 +25,7 @@ namespace ApexDatabaseApplication
 
         private void Execute_Click(object sender, EventArgs e)
         {
-            const string connectionString = @"Server=BLD\SQLEXPRESS;Database=ApexDatabase;Integrated Security=True;";
+            const string connectionString = @"Server=BLD\SQLEXPRESS;Database=OverwatchDatabase;Integrated Security=True;";
             try
             {
                 SqlConnectionStringBuilder build = new SqlConnectionStringBuilder(connectionString);

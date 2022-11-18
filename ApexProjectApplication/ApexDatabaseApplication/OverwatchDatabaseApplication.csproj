@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4993ABF8-D1AF-4281-A4FF-8667E7EFE059}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ApexDatabaseApplication</RootNamespace>
+    <AssemblyName>ApexDatabaseApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewPlayerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewPlayerFrm.Designer.cs">
+      <DependentUpon>AddNewPlayerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeamFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeamFrm.Designer.cs">
+      <DependentUpon>AddTeamFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TournamentWinnerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TournamentWinnerFrm.Designer.cs">
+      <DependentUpon>TournamentWinnerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePlayerEmailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePlayerEmailFrm.Designer.cs">
+      <DependentUpon>UpdatePlayerEmailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTournamentWinner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTournamentWinner.Designer.cs">
+      <DependentUpon>UpdateTournamentWinner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinPercentageTrackerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinPercentageTrackerFrm.Designer.cs">
+      <DependentUpon>WinPercentageTrackerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankTeamAvgKillsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankTeamAvgKillsFrm.Designer.cs">
+      <DependentUpon>RankTeamAvgKillsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankTeamHighestWinFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankTeamHighestWinFrm.Designer.cs">
+      <DependentUpon>RankTeamHighestWinFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankPlayerByKillsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankPlayerByKillsFrm.Designer.cs">
+      <DependentUpon>RankPlayerByKillsFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewPlayerFrm.resx">
+      <DependentUpon>AddNewPlayerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeamFrm.resx">
+      <DependentUpon>AddTeamFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TournamentWinnerFrm.resx">
+      <DependentUpon>TournamentWinnerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePlayerEmailFrm.resx">
+      <DependentUpon>UpdatePlayerEmailFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTournamentWinner.resx">
+      <DependentUpon>UpdateTournamentWinner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinPercentageTrackerFrm.resx">
+      <DependentUpon>WinPercentageTrackerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankTeamAvgKillsFrm.resx">
+      <DependentUpon>RankTeamAvgKillsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankTeamHighestWinFrm.resx">
+      <DependentUpon>RankTeamHighestWinFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankPlayerByKillsFrm.resx">
+      <DependentUpon>RankPlayerByKillsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Procedures\Procedures.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
