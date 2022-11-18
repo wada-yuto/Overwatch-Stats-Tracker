@@ -31,9 +31,9 @@ namespace ApexDatabaseApplication
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.uxCharacerComboBox = new System.Windows.Forms.ComboBox();
             this.Execute = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.uxCharacerComboBox = new System.Windows.Forms.ComboBox();
             this.uxDataView = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxDataView)).BeginInit();
@@ -60,31 +60,6 @@ namespace ApexDatabaseApplication
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(639, 261);
             this.panel3.TabIndex = 6;
-            // 
-            // Execute
-            // 
-            this.Execute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Execute.FlatAppearance.BorderSize = 0;
-            this.Execute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Execute.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Execute.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Execute.Location = new System.Drawing.Point(410, 194);
-            this.Execute.Name = "Execute";
-            this.Execute.Size = new System.Drawing.Size(226, 64);
-            this.Execute.TabIndex = 2;
-            this.Execute.Text = "Find";
-            this.Execute.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label2.Location = new System.Drawing.Point(3, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 40);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Select a map";
             // 
             // uxCharacerComboBox
             // 
@@ -135,6 +110,32 @@ namespace ApexDatabaseApplication
             this.uxCharacerComboBox.Size = new System.Drawing.Size(422, 38);
             this.uxCharacerComboBox.TabIndex = 10;
             this.uxCharacerComboBox.Text = "Maps";
+            // 
+            // Execute
+            // 
+            this.Execute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Execute.FlatAppearance.BorderSize = 0;
+            this.Execute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Execute.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Execute.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Execute.Location = new System.Drawing.Point(410, 194);
+            this.Execute.Name = "Execute";
+            this.Execute.Size = new System.Drawing.Size(226, 64);
+            this.Execute.TabIndex = 2;
+            this.Execute.Text = "Find";
+            this.Execute.UseVisualStyleBackColor = false;
+            this.Execute.Click += new System.EventHandler(this.Execute_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label2.Location = new System.Drawing.Point(3, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(191, 40);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Select a map";
             // 
             // uxDataView
             // 

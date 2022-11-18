@@ -82,6 +82,7 @@ namespace ApexDatabaseApplication
             this.Execute.TabIndex = 2;
             this.Execute.Text = "Find!";
             this.Execute.UseVisualStyleBackColor = false;
+            this.Execute.Click += new System.EventHandler(this.Execute_Click);
             // 
             // label1
             // 

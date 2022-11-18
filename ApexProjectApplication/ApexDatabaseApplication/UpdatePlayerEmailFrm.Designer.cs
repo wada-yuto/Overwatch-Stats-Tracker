@@ -233,6 +233,7 @@
             this.Execute.TabIndex = 2;
             this.Execute.Text = "Update Email";
             this.Execute.UseVisualStyleBackColor = false;
+            this.Execute.Click += new System.EventHandler(this.Execute_Click);
             // 
             // label2
             // 

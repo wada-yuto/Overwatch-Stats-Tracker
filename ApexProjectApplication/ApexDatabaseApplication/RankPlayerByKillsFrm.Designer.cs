@@ -31,12 +31,11 @@ namespace ApexDatabaseApplication
         {
             this.uxDataView = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.uxCharacerComboBox = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.uxTournamentComboBox = new System.Windows.Forms.ComboBox();
             this.Execute = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uxDataView)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -54,8 +53,7 @@ namespace ApexDatabaseApplication
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.uxCharacerComboBox);
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.uxTournamentComboBox);
             this.panel3.Controls.Add(this.Execute);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(21, 88);
@@ -63,32 +61,32 @@ namespace ApexDatabaseApplication
             this.panel3.Size = new System.Drawing.Size(683, 303);
             this.panel3.TabIndex = 7;
             // 
-            // uxCharacerComboBox
+            // label3
             // 
-            this.uxCharacerComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.uxCharacerComboBox.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxCharacerComboBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.uxCharacerComboBox.FormattingEnabled = true;
-            this.uxCharacerComboBox.Items.AddRange(new object[] {
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label3.Location = new System.Drawing.Point(3, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(356, 40);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Select A Tournament ID: ";
+            // 
+            // uxTournamentComboBox
+            // 
+            this.uxTournamentComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.uxTournamentComboBox.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxTournamentComboBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.uxTournamentComboBox.FormattingEnabled = true;
+            this.uxTournamentComboBox.Items.AddRange(new object[] {
             "254",
             "255",
             "256"});
-            this.uxCharacerComboBox.Location = new System.Drawing.Point(0, 53);
-            this.uxCharacerComboBox.Name = "uxCharacerComboBox";
-            this.uxCharacerComboBox.Size = new System.Drawing.Size(422, 38);
-            this.uxCharacerComboBox.TabIndex = 9;
-            this.uxCharacerComboBox.Text = "Tournaments";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label4.Location = new System.Drawing.Point(5, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "ENTER DESC";
+            this.uxTournamentComboBox.Location = new System.Drawing.Point(0, 75);
+            this.uxTournamentComboBox.Name = "uxTournamentComboBox";
+            this.uxTournamentComboBox.Size = new System.Drawing.Size(422, 38);
+            this.uxTournamentComboBox.TabIndex = 9;
+            this.uxTournamentComboBox.Text = "Tournaments";
             // 
             // Execute
             // 
@@ -103,13 +101,14 @@ namespace ApexDatabaseApplication
             this.Execute.TabIndex = 2;
             this.Execute.Text = "Find!";
             this.Execute.UseVisualStyleBackColor = false;
+            this.Execute.Click += new System.EventHandler(this.Execute_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label2.Location = new System.Drawing.Point(3, 10);
+            this.label2.Location = new System.Drawing.Point(3, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 40);
             this.label2.TabIndex = 3;
@@ -124,17 +123,6 @@ namespace ApexDatabaseApplication
             this.label1.Size = new System.Drawing.Size(492, 80);
             this.label1.TabIndex = 6;
             this.label1.Text = "Rank Player By Kills per game in a \r\nspecific tournament\r\n";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label3.Location = new System.Drawing.Point(3, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 40);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Select A Tournament ID: ";
             // 
             // RankPlayerByKillsFrm
             // 
@@ -160,8 +148,7 @@ namespace ApexDatabaseApplication
         private System.Windows.Forms.DataGridView uxDataView;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox uxCharacerComboBox;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox uxTournamentComboBox;
         private System.Windows.Forms.Button Execute;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
