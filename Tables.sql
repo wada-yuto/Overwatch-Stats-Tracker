@@ -6,18 +6,18 @@ IF SCHEMA_ID(N'Championship') IS NULL
    EXEC(N'CREATE SCHEMA [Championship];');
 GO
 
-DROP TABLE IF EXISTS Championship.Tournament;
-DROP TABLE IF EXISTS Championship.TournamentGame;
-DROP TABLE IF EXISTS Championship.Team;
-DROP TABLE IF EXISTS Championship.PlayerGame;
-DROP TABLE IF EXISTS Championship.Character;
-DROP TABLE IF EXISTS Championship.Player;
+DROP TABLE IF EXISTS TournamentGame;
+DROP TABLE IF EXISTS Tournament;
+DROP TABLE IF EXISTS Team;
+DROP TABLE IF EXISTS PlayerGame;
+DROP TABLE IF EXISTS Character;
+DROP TABLE IF EXISTS Player;
 
 GO 
 /******************
  * Create Tables
  ******************/
-CREATE TABLE Championship.Player
+CREATE TABLE Player
 (
     PlayerID INT NOT NULL IDENTITY PRIMARY KEY,
     PlayerName NVARCHAR(32) NOT NULL,
@@ -27,51 +27,54 @@ CREATE TABLE Championship.Player
     Email NVARCHAR(32) NOT NULL
     UNIQUE(PlayerName, Email)
 );
-CREATE TABLE Championship.Character
+CREATE TABLE Character
 (
     CharacterID INT NOT NULL IDENTITY PRIMARY KEY,
     Name NVARCHAR(32) NOT NULL
     UNIQUE(Name)
 );
-CREATE TABLE Championship.PlayerGame
+CREATE TABLE PlayerGame
 (
     PlayerGameID INT NOT NULL IDENTITY PRIMARY KEY,
     Kills INT NOT NULL,
     CharacterID INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.CHARACTER(CharacterID),
+        REFERENCES CHARACTER(CharacterID),
     PlayerID INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Player(PlayerID)
+        REFERENCES Player(PlayerID)
 );
-CREATE TABLE Championship.Team
+CREATE TABLE Team
 (
     TeamID INT NOT NULL IDENTITY PRIMARY KEY,
     Coach NVARCHAR(32) NOT NULL,
     Record NVARCHAR(32) NOT NULL,
     TeamName NVARCHAR(32) NOT NULL,
     Player1 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Player(PlayerID),
+        REFERENCES Player(PlayerID),
     Player2 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Player(PlayerID),
+        REFERENCES Player(PlayerID),
     Player3 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Player(PlayerID),
+        REFERENCES Player(PlayerID),
     Player4 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Player(PlayerID),
+        REFERENCES Player(PlayerID),
     Player5 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Player(PlayerID)
+        REFERENCES Player(PlayerID)
     UNIQUE(Coach, TeamName)
 );
-CREATE TABLE Championship.TournamentGame
+CREATE TABLE Tournament
+(
+    TournamentID INT NOT NULL IDENTITY PRIMARY KEY,
+    TeamNumber INT NOT NULL
+);
+CREATE TABLE TournamentGame
 (
     TournamentGameID INT NOT NULL IDENTITY PRIMARY KEY,
     Map NVARCHAR(32) NOT NULL,
     Team1 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Team(TeamID),
+        REFERENCES Team(TeamID),
     Team2 INT NOT NULL FOREIGN KEY
-        REFERENCES Championship.Team(TeamID),
-    Winner INT NOT NULL
-);
-CREATE TABLE Championship.Tournament
-(
-    TournamentID INT NOT NULL IDENTITY PRIMARY KEY,
-    TeamNumber INT NOT NULL
+        REFERENCES Team(TeamID),
+    Winner INT NOT NULL FOREIGN KEY
+        REFERENCES Team(TeamID),
+    TournamentID INT NOT NULL FOREIGN KEY
+        REFERENCES Tournament(TournamentID)
 );
