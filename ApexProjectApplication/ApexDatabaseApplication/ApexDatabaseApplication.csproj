@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewPlayerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewPlayerFrm.Designer.cs">
+      <DependentUpon>AddNewPlayerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeamFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeamFrm.Designer.cs">
+      <DependentUpon>AddTeamFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,30 +66,54 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query1.cs">
+    <Compile Include="TournamentWinnerFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Query1.Designer.cs">
-      <DependentUpon>Query1.cs</DependentUpon>
+    <Compile Include="TournamentWinnerFrm.Designer.cs">
+      <DependentUpon>TournamentWinnerFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Query2.cs">
+    <Compile Include="UpdatePlayerEmailFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Query2.Designer.cs">
-      <DependentUpon>Query2.cs</DependentUpon>
+    <Compile Include="UpdatePlayerEmailFrm.Designer.cs">
+      <DependentUpon>UpdatePlayerEmailFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Query3.cs">
+    <Compile Include="UpdateTournamentWinner.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Query3.Designer.cs">
-      <DependentUpon>Query3.cs</DependentUpon>
+    <Compile Include="UpdateTournamentWinner.Designer.cs">
+      <DependentUpon>UpdateTournamentWinner.cs</DependentUpon>
     </Compile>
-    <Compile Include="Query4.cs">
+    <Compile Include="WinPercentageTrackerFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Query4.Designer.cs">
-      <DependentUpon>Query4.cs</DependentUpon>
+    <Compile Include="WinPercentageTrackerFrm.Designer.cs">
+      <DependentUpon>WinPercentageTrackerFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RankTeamAvgKillsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankTeamAvgKillsFrm.Designer.cs">
+      <DependentUpon>RankTeamAvgKillsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankTeamHighestWinFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankTeamHighestWinFrm.Designer.cs">
+      <DependentUpon>RankTeamHighestWinFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankPlayerByKillsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankPlayerByKillsFrm.Designer.cs">
+      <DependentUpon>RankPlayerByKillsFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewPlayerFrm.resx">
+      <DependentUpon>AddNewPlayerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeamFrm.resx">
+      <DependentUpon>AddTeamFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,17 +126,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Query1.resx">
-      <DependentUpon>Query1.cs</DependentUpon>
+    <EmbeddedResource Include="TournamentWinnerFrm.resx">
+      <DependentUpon>TournamentWinnerFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Query2.resx">
-      <DependentUpon>Query2.cs</DependentUpon>
+    <EmbeddedResource Include="UpdatePlayerEmailFrm.resx">
+      <DependentUpon>UpdatePlayerEmailFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Query3.resx">
-      <DependentUpon>Query3.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateTournamentWinner.resx">
+      <DependentUpon>UpdateTournamentWinner.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Query4.resx">
-      <DependentUpon>Query4.cs</DependentUpon>
+    <EmbeddedResource Include="WinPercentageTrackerFrm.resx">
+      <DependentUpon>WinPercentageTrackerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankTeamAvgKillsFrm.resx">
+      <DependentUpon>RankTeamAvgKillsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankTeamHighestWinFrm.resx">
+      <DependentUpon>RankTeamHighestWinFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankPlayerByKillsFrm.resx">
+      <DependentUpon>RankPlayerByKillsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -30,7 +30,7 @@ namespace ApexDatabaseApplication
             InitializeComponent();
             //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             this.uxLoader.Controls.Clear();
-            Query1 Q1 = new Query1() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            WinPercentageTrackerFrm Q1 = new WinPercentageTrackerFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q1.FormBorderStyle = FormBorderStyle.None;
             this.uxLoader.Controls.Add(Q1);
             Q1.Show();
@@ -48,7 +48,7 @@ namespace ApexDatabaseApplication
             uxQ3.BackColor = Color.FromArgb(24, 30, 54);
             uxQ4.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
-            Query1 Q1 = new Query1() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            WinPercentageTrackerFrm Q1 = new WinPercentageTrackerFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q1.FormBorderStyle = FormBorderStyle.None;
             this.uxLoader.Controls.Add(Q1);
             Q1.Show();
@@ -63,7 +63,7 @@ namespace ApexDatabaseApplication
             uxQ4.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
             this.uxLoader.Controls.Clear();
-            Query2 Q2 = new Query2() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            RankTeamAvgKillsFrm Q2 = new RankTeamAvgKillsFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q2.FormBorderStyle = FormBorderStyle.None;
             this.uxLoader.Controls.Add(Q2);
             Q2.Show();
@@ -77,7 +77,7 @@ namespace ApexDatabaseApplication
             uxQ2.BackColor = Color.FromArgb(24, 30, 54);
             uxQ4.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
-            Query3 Q3 = new Query3() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            RankTeamHighestWinFrm Q3 = new RankTeamHighestWinFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q3.FormBorderStyle = FormBorderStyle.None;
             this.uxLoader.Controls.Add(Q3);
             Q3.Show();
@@ -90,7 +90,7 @@ namespace ApexDatabaseApplication
             uxQ2.BackColor = Color.FromArgb(24, 30, 54);
             uxQ3.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
-            Query4 Q4 = new Query4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            RankPlayerByKillsFrm Q4 = new RankPlayerByKillsFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q4.FormBorderStyle = FormBorderStyle.None;
             this.uxLoader.Controls.Add(Q4);
             Q4.Show();

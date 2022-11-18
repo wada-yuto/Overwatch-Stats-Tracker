@@ -40,3 +40,22 @@ C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexD
 C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.CoreCompileInputs.cache
 C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.exe
 C:\Users\ethan\Source\Repos\wada-yuto\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.exe.config
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.exe
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\bin\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.AssemblyReference.cache
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.uxMainWindow.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Properties.Resources.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.GenerateResource.cache
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.CoreCompileInputs.cache
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.exe
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.pdb
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.AddNewPlayerFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.TournamentWinnerFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.UpdatePlayerEmailFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.WinPercentageTrackerFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankTeamAvgKillsFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankTeamHighestWinFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankPlayerByKillsFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.AddTeamFrm.resources
