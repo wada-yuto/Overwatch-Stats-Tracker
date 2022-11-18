@@ -59,3 +59,4 @@ C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexD
 C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankTeamHighestWinFrm.resources
 C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankPlayerByKillsFrm.resources
 C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.AddTeamFrm.resources
+C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.UpdateTournamentWinner.resources

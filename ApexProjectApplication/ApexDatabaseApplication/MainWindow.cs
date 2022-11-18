@@ -47,6 +47,11 @@ namespace ApexDatabaseApplication
             uxQ2.BackColor = Color.FromArgb(24, 30, 54);
             uxQ3.BackColor = Color.FromArgb(24, 30, 54);
             uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
             WinPercentageTrackerFrm Q1 = new WinPercentageTrackerFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q1.FormBorderStyle = FormBorderStyle.None;
@@ -61,6 +66,11 @@ namespace ApexDatabaseApplication
             uxQ1.BackColor = Color.FromArgb(24, 30, 54);
             uxQ3.BackColor = Color.FromArgb(24, 30, 54);
             uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
             this.uxLoader.Controls.Clear();
             RankTeamAvgKillsFrm Q2 = new RankTeamAvgKillsFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -76,6 +86,11 @@ namespace ApexDatabaseApplication
             uxQ1.BackColor = Color.FromArgb(24, 30, 54);
             uxQ2.BackColor = Color.FromArgb(24, 30, 54);
             uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
             RankTeamHighestWinFrm Q3 = new RankTeamHighestWinFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q3.FormBorderStyle = FormBorderStyle.None;
@@ -89,6 +104,11 @@ namespace ApexDatabaseApplication
             uxQ1.BackColor = Color.FromArgb(24, 30, 54);
             uxQ2.BackColor = Color.FromArgb(24, 30, 54);
             uxQ3.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
             this.uxLoader.Controls.Clear();
             RankPlayerByKillsFrm Q4 = new RankPlayerByKillsFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Q4.FormBorderStyle = FormBorderStyle.None;
@@ -99,6 +119,96 @@ namespace ApexDatabaseApplication
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.FromArgb(46, 51, 73);
+            uxQ1.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ2.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ3.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
+            this.uxLoader.Controls.Clear();
+            TournamentWinnerFrm Q4 = new TournamentWinnerFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Q4.FormBorderStyle = FormBorderStyle.None;
+            this.uxLoader.Controls.Add(Q4);
+            Q4.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.FromArgb(46, 51, 73);
+            uxQ1.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ2.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ3.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
+            this.uxLoader.Controls.Clear();
+            UpdatePlayerEmailFrm Q4 = new UpdatePlayerEmailFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Q4.FormBorderStyle = FormBorderStyle.None;
+            this.uxLoader.Controls.Add(Q4);
+            Q4.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.FromArgb(46, 51, 73);
+            uxQ1.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ2.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ3.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
+            this.uxLoader.Controls.Clear();
+            AddNewPlayerFrm Q4 = new AddNewPlayerFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Q4.FormBorderStyle = FormBorderStyle.None;
+            this.uxLoader.Controls.Add(Q4);
+            Q4.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.FromArgb(46, 51, 73);
+            uxQ1.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ2.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ3.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button5.BackColor = Color.FromArgb(24, 30, 54);
+            this.uxLoader.Controls.Clear();
+            AddTeamFrm Q4 = new AddTeamFrm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Q4.FormBorderStyle = FormBorderStyle.None;
+            this.uxLoader.Controls.Add(Q4);
+            Q4.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.FromArgb(46, 51, 73);
+            uxQ1.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ2.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ3.BackColor = Color.FromArgb(24, 30, 54);
+            uxQ4.BackColor = Color.FromArgb(24, 30, 54);
+            button1.BackColor = Color.FromArgb(24, 30, 54);
+            button2.BackColor = Color.FromArgb(24, 30, 54);
+            button3.BackColor = Color.FromArgb(24, 30, 54);
+            button4.BackColor = Color.FromArgb(24, 30, 54);
+            this.uxLoader.Controls.Clear();
+            UpdateTournamentWinner Q4 = new UpdateTournamentWinner() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Q4.FormBorderStyle = FormBorderStyle.None;
+            this.uxLoader.Controls.Add(Q4);
+            Q4.Show();
         }
     }
 }
