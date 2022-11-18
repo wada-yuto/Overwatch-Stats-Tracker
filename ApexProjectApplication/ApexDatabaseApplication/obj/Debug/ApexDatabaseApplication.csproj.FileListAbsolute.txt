@@ -18,10 +18,6 @@ C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplicat
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.AssemblyReference.cache
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.uxMainWindow.resources
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Properties.Resources.resources
-C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query1.resources
-C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query2.resources
-C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query3.resources
-C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.Query4.resources
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.GenerateResource.cache
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.csproj.CoreCompileInputs.cache
 C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.exe
@@ -60,3 +56,12 @@ C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexD
 C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankPlayerByKillsFrm.resources
 C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.AddTeamFrm.resources
 C:\Users\ethan\Desktop\Updating UI 560 - FINAL PROJ\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.UpdateTournamentWinner.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.AddNewPlayerFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.AddTeamFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.TournamentWinnerFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.UpdatePlayerEmailFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.UpdateTournamentWinner.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.WinPercentageTrackerFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankTeamAvgKillsFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankTeamHighestWinFrm.resources
+C:\Users\yutow\Desktop\CIS560Project\ApexProjectApplication\ApexDatabaseApplication\obj\Debug\ApexDatabaseApplication.RankPlayerByKillsFrm.resources
